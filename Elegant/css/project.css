@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  button {
+    outline: none;
+    border: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  li {
+    list-style: none;
+  }
+  input,
+  textarea {
+    outline: none;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  p {
+    margin: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #cecece;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #a4a4a4;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #8e8f8f;
+  }
+  
+  /*.................../*
+      
+      
+      
+      /* Header */
+  .header {
+    background: url(../img/project-img/img.png) center top no-repeat;
+    background-size: cover;
+  }
+  .menu__icon-wrap {
+    position: relative;
+  }
+  .menu__icon {
+    z-index: 25;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .menu__icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .menu__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu__icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  .menu__icon span,
+  .menu__icon::before,
+  .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+  }
+  .menu__icon::before,
+  .menu__icon::after {
+    content: "";
+  }
+  .menu__icon::before {
+    top: 0;
+    z-index: 25;
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .menu-text {
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: -3px;
+    left: -65px;
+  }
+  .nav {
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(193, 156, 102, 0.8);
+    z-index: 20;
+    transition: right 0.5s ease 0s;
+    overflow: auto;
+  }
+  .header__list {
+    padding-top: 100px;
+    top: 0;
+    left: 41%;
+    position: absolute;
+  }
+  .header__li {
+    margin-bottom: 60px;
+  }
+  .header__li:last-child {
+    margin-bottom: 0;
+  }
+  .nav._active {
+    right: 0;
+  }
+  .sub-menu__li {
+    margin-bottom: 30px;
+  }
+  .header-inner-wrap {
+    display: flex;
+    align-items: center;
+  }
+  .header__link {
+    text-transform: uppercase;
+    color: white;
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 600px;
+  }
+  .arrow {
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s all;
+    padding-bottom: 100px;
+  }
+  .arrow:hover {
+    transform: translateY(-5px);
+  }
+  /* /header */
+  
+  /* Nora */
+  .title{
+      font-weight: 700;
+      color:#000000;
+      font-size: 45px;
+      margin-bottom: 115px;
+  }
+  .subtitle{
+      max-width: 670px;
+      margin-bottom: 130px;
+      line-height: 30px;
+  }
+  .nora{
+      margin: 85px 0;
+  }
+  .nora__inner{
+      padding: 60px;
+      background-color: #f9f9f9;
+      display: flex;   
+  }
+  .item-2{
+      margin-left: 50px;
+  }
+  .proj-img{
+      margin-bottom: 20px;
+  }
+  .proj-img:last-child{
+      margin-bottom: 0;
+  }
+  .proj-img-2{
+      margin-bottom: 5px;
+  }
+  .proj-img-2:last-child{
+      margin-bottom: 0;
+  }
+  .btn{
+    font-size: 14px;
+    color:#021725;
+    padding: 10px 70px;
+    border:1px solid #a1a1a1;
+    display: inline-block;
+    transition: .3s all;
+    color:#c8c8c8;
+    text-transform: uppercase;
+}
+.social__inner{
+    display: flex;
+    justify-content: space-around;
+}
+.social{
+    margin-bottom: 70px;
+}
+.btn:hover{
+    transform: translateY(-5px);
+}
+  /* Nora */
+  
+  /* Footer */
+  .footer-text {
+    font-size: 13px;
+    color: #505d68;
+  }
+  .footer__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px 0;
+  }
+  .footer {
+    background-color: #f9f9f9;
+  }
+  /* /Footer */
